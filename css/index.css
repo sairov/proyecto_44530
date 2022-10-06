@@ -249,6 +249,7 @@ header {
     color: var(--primary);
     font-size: var(--text-lg);
     font-weight: bold;
+    color: blue;
 }
 
 .estadios__link svg {
