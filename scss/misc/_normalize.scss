@@ -1,0 +1,71 @@
+/* NORMALIZE*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    // color: $secondary;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    display: inline-block;
+    font-size: $text-md;
+    text-decoration: none;
+    color: $light;
+}
+
+p {
+    font-size: 1.6em;
+}
+
+img {
+    width: 100%;
+}
+
+.bg-principal {
+    background-color: $primary;
+}
+
+.bg-obscure {
+    background-color: $secondary;
+}
+
+.content {
+    max-width: 450px;
+}
+
+/* BOOSTRAP DESREBOOT*/
+
+ol, ul, dl {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+a:hover {
+    color: inherit;
+}
+
+$backgrounds: (
+    primary: $primary,
+    secondary: $secondary,
+    light: $light
+);
+
+@each $key, $value in $backgrounds {
+
+    .bg-#{$key} {
+        background-color: $value;
+    }
+}

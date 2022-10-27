@@ -1,0 +1,347 @@
+/* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+/* MISC */
+/* VARIABLES */
+/* Palette*/
+/* Font Sizes */
+/* Spacings */
+/* MAPS */
+.p-6 {
+  padding: 12rem; }
+
+.p-6-x {
+  padding-left: 12rem;
+  padding-right: 12rem; }
+
+.p-6-y {
+  padding-left: 12rem;
+  padding-right: 12rem; }
+
+.p-5 {
+  padding: 8rem; }
+
+.p-5-x {
+  padding-left: 8rem;
+  padding-right: 8rem; }
+
+.p-5-y {
+  padding-left: 8rem;
+  padding-right: 8rem; }
+
+.p-4 {
+  padding: 5rem; }
+
+.p-4-x {
+  padding-left: 5rem;
+  padding-right: 5rem; }
+
+.p-4-y {
+  padding-left: 5rem;
+  padding-right: 5rem; }
+
+.p-3 {
+  padding: 3.2rem; }
+
+.p-3-x {
+  padding-left: 3.2rem;
+  padding-right: 3.2rem; }
+
+.p-3-y {
+  padding-left: 3.2rem;
+  padding-right: 3.2rem; }
+
+.p-2 {
+  padding: 1.6rem; }
+
+.p-2-x {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem; }
+
+.p-2-y {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem; }
+
+.p-1 {
+  padding: 0.8rem; }
+
+.p-1-x {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem; }
+
+.p-1-y {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem; }
+
+/* NORMALIZE*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Poppins', sans-serif; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  display: inline-block;
+  font-size: 2em;
+  text-decoration: none;
+  color: #FDFDFD; }
+
+p {
+  font-size: 1.6em; }
+
+img {
+  width: 100%; }
+
+.bg-principal {
+  background-color: #8A1538; }
+
+.bg-obscure {
+  background-color: #2B2B2B; }
+
+.content {
+  max-width: 450px; }
+
+/* BOOSTRAP DESREBOOT*/
+ol, ul, dl {
+  margin-bottom: 0;
+  padding-left: 0; }
+
+a:hover {
+  color: inherit; }
+
+.bg-primary {
+  background-color: #8A1538; }
+
+.bg-secondary {
+  background-color: #2B2B2B; }
+
+.bg-light {
+  background-color: #FDFDFD; }
+
+/* PARTIALS */
+/* HEADER */
+header {
+  padding: 1.6rem;
+  background-color: #2B2B2B; }
+  header .navbar {
+    display: flex;
+    justify-content: space-between; }
+    header .navbar .navbar__link {
+      min-width: 180px;
+      max-width: 180px; }
+    header .navbar .hamburger {
+      display: none;
+      color: #FDFDFD; }
+    header .navbar .checkevent {
+      display: none;
+      position: absolute;
+      width: 42px;
+      height: 30px;
+      right: 25px;
+      top: 40px;
+      opacity: 0; }
+    header .navbar .menu {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      align-items: center; }
+      header .navbar .menu__link, header .navbar .menu__link--active {
+        padding: 0.8rem;
+        transition: all .3s ease-in-out; }
+        header .navbar .menu__link--active {
+          border-bottom: 2px solid #D20A46; }
+        header .navbar .menu__link:hover, header .navbar .menu__link--active:hover {
+          background-color: #FDFDFD;
+          color: #2B2B2B; }
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
+  padding: 3.2rem; }
+
+/* PAGES */
+/* BANNER */
+#banner {
+  display: grid;
+  place-items: center; }
+
+/* HISTORIA */
+#historia {
+  padding: 8rem; }
+  #historia div {
+    display: flex;
+    gap: 3.2rem;
+    color: #FDFDFD; }
+
+.historia__article {
+  flex: 1 1 50%; }
+
+.historia__article:first-of-type {
+  border-right: 1px solid #FDFDFD; }
+
+.historia__title {
+  font-size: 4.8em;
+  font-weight: 300;
+  margin-bottom: 2.2rem; }
+
+.historia__text {
+  font-size: 2em;
+  font-weight: 300;
+  margin-bottom: 2.2rem; }
+
+.historia__caption {
+  font-size: 1.6em;
+  font-weight: 300; }
+
+/* ESTADIOS */
+#estadios {
+  padding: 8rem; }
+
+#estadios div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+  color: #FDFDFD; }
+
+.estadios__images, .estadios__info {
+  flex: 1 1 40%; }
+
+.estadios__images {
+  display: grid;
+  align-items: end;
+  gap: 1.6rem;
+  grid-template-columns: 272px 312px;
+  grid-template-rows: 152px 1fr 175px; }
+
+.estadios__img:nth-of-type(1) {
+  grid-row: 1;
+  display: grid;
+  place-items: center; }
+
+.estadios__img:nth-of-type(2) {
+  grid-row: 1 / 3; }
+
+.estadios__img:nth-of-type(3) {
+  grid-row: 2 /  4; }
+
+.estadios__img:nth-of-type(4) {
+  grid-row: 3; }
+
+.estadios__info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3.2rem; }
+
+.estadios__title {
+  font-size: 4.8em;
+  position: relative; }
+
+.estadios__title::before {
+  content: '';
+  width: 34px;
+  height: 8px;
+  background-color: #8A1538;
+  position: absolute;
+  top: -20px; }
+
+.estadios__subtitle {
+  color: #D20A46;
+  font-size: 3.6em;
+  font-weight: 400; }
+
+.estadios__text {
+  font-size: 1.6em;
+  font-weight: 300;
+  line-height: 30px; }
+
+.estadios__link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.6rem;
+  color: #8A1538;
+  font-size: 3.2em;
+  font-weight: bold; }
+
+.estadios__link:hover {
+  color: #8A1538; }
+
+.estadios__link svg {
+  transition: transform .3s ease-in; }
+
+.estadios__link:hover svg {
+  transform: translateX(20px); }
+
+/* MEDIAS */
+@media screen and (max-width: 968px) {
+  #historia div {
+    flex-direction: column;
+    align-items: center; }
+  .historia__article:first-of-type {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #FDFDFD;
+    padding-bottom: 1.6rem; } }
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    /* flex-direction: column; */
+    align-items: center;
+    flex-wrap: wrap; }
+  .navbar .menu {
+    /* justify-content: center; */
+    transition: all .6s ease;
+    display: none; }
+  .hamburger,
+  .checkevent {
+    display: block; }
+  .checkevent:checked + .menu {
+    display: block;
+    flex-basis: 100%;
+    height: 100vh;
+    transition: all .6s ease; }
+  .estadios__images {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; }
+  .estadios__img:nth-of-type(1) {
+    grid-column: auto;
+    grid-row: auto; }
+  .estadios__img:nth-of-type(2) {
+    grid-column: auto;
+    grid-row: auto; }
+  .estadios__img:nth-of-type(3) {
+    grid-column: auto;
+    grid-row: auto; }
+  .estadios__img:nth-of-type(4) {
+    grid-column: auto;
+    grid-row: auto; }
+  .estadios__info {
+    order: -1; } }
+
+@media screen and (max-width: 576px) {
+  #historia {
+    font-size: 0.7em;
+    padding: 3.2rem; }
+  #estadios {
+    padding: 3.2rem; }
+  .estadios__title {
+    font-size: 3.2em; } }
+
+.section article:nth-of-type(odd) {
+  padding: 30px;
+  background-color: #8A1538; }
