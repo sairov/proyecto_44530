@@ -35,7 +35,13 @@
     font-size: $text-md;
     font-weight: 300;
     margin-bottom: 2.2rem;
+
+    &--pink {
+        @extend .historia__text;
+        color: rgb(245, 196, 48);
+    }
 }
+
 
 .historia__caption {
     font-size: $text-sm;
@@ -143,6 +149,38 @@
 .estadios__link:hover svg {
     transform: translateX(20px);
 }
+
+
+/* OVERFLOW */
+
+#overflow {
+    // background-image: url('../img/banner.jpg');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // align-items: flex-end;
+    // display: flex;
+    // flex-wrap: wrap;
+    // gap: 2rem;
+    // padding: 4rem;
+    height: 70vh;
+    // position: relative;
+    div {
+        // position: absolute;
+        // bottom: 20%;
+        transform: translateY(-200px);
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        article {
+            padding: 4rem;
+            border: 2px solid black;
+            background-color: rgba($color: #000000, $alpha: 0.5);
+            flex: 1 1 250px;
+        }
+    }
+    
+}
+
 
 /* MEDIAS */
 

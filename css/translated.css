@@ -194,10 +194,12 @@ footer {
   font-weight: 300;
   margin-bottom: 2.2rem; }
 
-.historia__text {
+.historia__text, .historia__text--pink {
   font-size: 2em;
   font-weight: 300;
   margin-bottom: 2.2rem; }
+  .historia__text--pink {
+    color: #f5c430; }
 
 .historia__caption {
   font-size: 1.6em;
@@ -286,6 +288,20 @@ footer {
 
 .estadios__link:hover svg {
   transform: translateX(20px); }
+
+/* OVERFLOW */
+#overflow {
+  height: 70vh; }
+  #overflow div {
+    transform: translateY(-200px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; }
+    #overflow div article {
+      padding: 4rem;
+      border: 2px solid black;
+      background-color: rgba(0, 0, 0, 0.5);
+      flex: 1 1 250px; }
 
 /* MEDIAS */
 @media screen and (max-width: 968px) {
